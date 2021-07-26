@@ -5,7 +5,7 @@
 html {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     color: dimgray;
 }
 
@@ -13,6 +13,28 @@ img {
     width: 100%;
     height: 100%;
 }
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* header section */
 
 header {
     width: 100%;
@@ -88,6 +110,8 @@ header .mobile_header a {
     }
 }
 
+/* main banner section */
+
 .main_banner {
     width: 100%;
     padding: 32px 24px;
@@ -103,6 +127,12 @@ header .mobile_header a {
     max-width: 60%;
 }
 
+.main_banner .banner_caption {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .main_banner .banner_caption h1 {
     margin-bottom: 32px;
 }
@@ -111,24 +141,15 @@ header .mobile_header a {
     margin-bottom: 40px;
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: bolder;
-    color: dimgray;
-}
 
-h5 {
-    font-size: 28px;
-    font-weight: 600;
-    color: dimgray;
-}
 
-.main_banner .banner_caption a {
+.main_banner .banner_caption button {
+    width: 100%;
     font-size: 24px;
     color: white;
     background-color: dimgray;
     text-decoration: none;
-    padding: 8px 30%;
+    padding: 8px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -153,3 +174,71 @@ h5 {
     }
 }
 
+/* information section */
+
+.info_banner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%
+}
+
+.quote {
+    width: 60%;
+    padding: 32px 24px;
+    
+}
+
+.quote .image_container {
+    margin-bottom: 32px;
+}
+
+.quote h2, .quote p {
+    margin-bottom: 24px;
+}
+
+.quote span {
+    font-weight: bold;
+}
+
+.tabs_container {
+    display: flex;
+    flex-direction: column; 
+    width: 40%
+}
+
+.tab {
+    border: 0.5px solid gainsboro;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.tab:hover {
+    background-color: gainsboro;
+}
+
+.tab .image_container {
+    width: 35%;
+    height: auto;
+    margin-right: 24px;
+}
+
+.tabtext {
+    width: 65%;
+}
+
+.tabtext h3, .tabtext p {
+    margin-bottom: 8px;
+}
+
+.tabtext a {
+    text-decoration: none;
+    color: steelblue;
+}
+
+/* Courses section */
+
+@media screen {
+    
+}
